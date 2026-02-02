@@ -252,7 +252,8 @@ footer {
 .header-container {
     text-align: center;
   max-width: flex;
-
+  width: 50%; 
+  margin: 0 auto;
    background-color: rgba(3, 15, 26, 0.6);
   border: 2px dotted #589600;
   border-radius:0px;
