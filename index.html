@@ -2,57 +2,58 @@
 <html>
   <head>
     <title>* Bestiary *</title>
-    <link href="pages.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://use.typekit.net/whh7adc.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
   </head>
 
-  <style>
-    body {
-      background-image: url("https://cdn.glitch.global/584b34cd-0948-4769-809f-c6c22031e031/pixel-lilypadfish.png?v=1745338991200");
+<style>
+  body {
+    background-image: url("https://cdn.glitch.global/584b34cd-0948-4769-809f-c6c22031e031/pixel-lilypadfish.png?v=1745338991200");
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+  }
+  
+  .column img {
+    margin-top: 50px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
     }
-   .row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 40px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 20px;
-}
-
-.column img {
-  margin-top: 50px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
   }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
   }
-}
-    
-  </style>
+</style>
+  
 
   <body>
     <script type="module" src="/main.js"></script>
