@@ -75,7 +75,7 @@ hr {
 
 header {
 	font-size: 55px;
-	display: flex;
+	display: block;
 	font-family: "hydrophilia-iced", serif;
 	color: #c8ed7e;
 }
